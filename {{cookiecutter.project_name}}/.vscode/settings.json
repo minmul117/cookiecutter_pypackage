@@ -1,8 +1,19 @@
 {
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
+    },
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["--line-length", "100", "extend-ignore", "E203"]
+    "python.formatting.blackArgs": [
+        "--line-length", "100",
+        "extend-ignore", "E203"
+    ],
+    "python.sortImports.args": [
+        "--settings-path", "${workspaceFolder}/pyproject.toml",
+    ],
 }
