@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "{{cookiecutter.package_name}}"
+version = "{{cookiecutter.version}}"
+description = ""
+authors = ["{{cookiecutter.name}} <{{cookiecutter.email}}>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.devdependencies]
+black = "^21.5b1"
+flake8 = "^3.9.2"
+mypy = "^0.812"
+pytest = "^6.2.4"
+
+[tool.isort]
+profile = "black"
