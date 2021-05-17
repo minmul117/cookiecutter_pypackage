@@ -15,5 +15,6 @@
     ],
     "python.sortImports.args": [
         "--settings-path", "${workspaceFolder}/pyproject.toml",
+        " --ignore-missing-imports"
     ],
 }

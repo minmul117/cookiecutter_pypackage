@@ -8,15 +8,19 @@ poetry.lock:
 init:
 	poetry install
 
-test: poetry.lock
+test:
+	poetry.lock
 	poetry run pytest
 
-lint: poetry.lock
+lint:
+	poetry.lock
 	poetry run black $(CODE)
 	poetry run flake8 {{cookiecutter.package_name}} --count --show-source --statistics
 
-format: poetry.lock
+format:
+	poetry.lock
 	poetry run black $(CODE)
 
-build: poetry.lock
+build:
+	poetry.lock
 	poetry build
