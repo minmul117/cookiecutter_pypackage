@@ -8,6 +8,11 @@
     "python.linting.lintOnSave": true,
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers"
+    ],
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length", "100",
@@ -15,6 +20,5 @@
     ],
     "python.sortImports.args": [
         "--settings-path", "${workspaceFolder}/pyproject.toml",
-        " --ignore-missing-imports"
     ],
 }
