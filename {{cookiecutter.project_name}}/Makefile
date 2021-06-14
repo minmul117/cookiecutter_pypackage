@@ -16,6 +16,7 @@ lint:
 	poetry.lock
 	poetry run black $(CODE)
 	poetry run flake8 {{cookiecutter.package_name}} --count --show-source --statistics
+	poetry run mypy $(CODE)
 
 format:
 	poetry.lock
