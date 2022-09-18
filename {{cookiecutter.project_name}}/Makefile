@@ -7,6 +7,7 @@ poetry.lock:
 
 init:
 	poetry install
+	export PYTHONPATH="$(PYTHONPATH):$(CURDIR)"
 
 test:
 	poetry.lock

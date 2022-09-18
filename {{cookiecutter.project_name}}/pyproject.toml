@@ -8,11 +8,11 @@ authors = ["{{cookiecutter.name}} <{{cookiecutter.email}}>"]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-black = "^21.5b1"
+black = "^22.8.0"
 flake8 = "^3.9.2"
-mypy = "^0.812"
-isort = "^5.9.3"
-pytest = "^6.2.4"
+mypy = "^0.971"
+isort = "^5.10.1"
+pytest = "^7.1.3"
 
 [tool.isort]
 profile = "black"
